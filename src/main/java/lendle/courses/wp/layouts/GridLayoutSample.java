@@ -29,10 +29,13 @@ public class GridLayoutSample {
         frame.setSize(500, 500);
         GridLayout layout=new GridLayout(3, 2);
         frame.setLayout(layout);
-        
         //1. add 6 CustomComponent to the frame
         //2. resize the frame to see the effect
-        
+        for(int i=0; i<6; i++)
+        {
+            CustomComponent c = new CustomComponent();
+            frame.add(c);
+        }
         //////////////////////////////////////////////////////////////////////
         
         frame.setVisible(true);
